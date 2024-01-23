@@ -7,12 +7,14 @@ interface Props {
 }
 
 export default function UrlReproEmail({ ctaText, ctaUrl }: Props) {
-  <Html>
-    <Head />
-    <Body>
-      <Button href={ctaUrl.toString()}>{ctaText}</Button>
-    </Body>
-  </Html>;
+  return (
+    <Html>
+      <Head />
+      <Body>
+        <Button href={ctaUrl.toString()}>{ctaText}</Button>
+      </Body>
+    </Html>
+  );
 }
 
 UrlReproEmail.PreviewProps = {
